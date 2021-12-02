@@ -4,9 +4,9 @@
 *  assignment has been copied manually or electronically from any other source (including web sites) or 
 *  distributed to other students.
 * 
-*  Name: James Bilik   Student ID: 155500192 Date: December 1st, 2021
+*  Name: James Bilik   Student ID: 155500192  Date: December 1st, 2021
 *
-*  Angular App (Deployed) Link: _____________________________________________________
+*  Angular App (Deployed) Link:  https://naughty-jackson-723cb1.netlify.app/login
 *
 *  User API (Heroku) Link: https://ancient-mountain-38099.herokuapp.com/
 *

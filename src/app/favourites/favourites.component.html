@@ -12,7 +12,7 @@
             <mat-card>
                 <mat-card-content><strong>{{track.name}}</strong> - {{track.duration}}<br /><br />
                     Artist(s): 
-                    <span *ngFor="let artist of track.artists"><a [routerLink] ="['/artist', artist.id]">Artist 1</a>&nbsp;&nbsp;</span>
+                    <span *ngFor="let artist of track.artists"><a [routerLink] ="['/artist', artist.id]">{{artist.name}}</a>&nbsp;&nbsp;</span>
                     <br />
 
                     Album: <a [routerLink]="['/album', track.album.id]">{{track.album.name}}</a><br />

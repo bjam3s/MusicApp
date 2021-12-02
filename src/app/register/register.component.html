@@ -19,7 +19,8 @@
             </mat-form-field><br />
             <button [disabled]="loading" mat-raised-button color="primary" type="submit">
                 <mat-icon>account_box</mat-icon>
-                <span>&nbsp;&nbsp;&nbsp;Register</span>
+                <span *ngIf="!loading">&nbsp;&nbsp;&nbsp;Register</span>
+                <span *ngIf="loading">&nbsp;&nbsp;&nbsp;Processing Request</span>
             </button>
         </form>
     </mat-card-content>

@@ -68,7 +68,7 @@ export class MusicDataService {
   removeFromFavourites(id:string): Observable<any> {
       // TODO: Perform the same tasks as the original getFavourites() method, only using "favouritesArray" from above, instead of this.favouritesList
       // NOTE: for the empty array, you will need to use o=>o.next({tracks: []}) instead of o=>{o.next([])}
-    return this.http.delete<[String]>(`${environment.userAPIBase}/favourites/${id}`).pipe(mergeMap(favouritesArray => {
+    return this.http.delete<[String]>(`${environment.userAPIBase}/user/favourites/${id}`).pipe(mergeMap(favouritesArray => {
       if (favouritesArray.length > 0) {
         const ids = favouritesArray.join(',');
         return this.spotifyToken.getBearerToken().pipe(

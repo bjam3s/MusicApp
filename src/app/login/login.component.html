@@ -15,7 +15,8 @@
         </mat-form-field><br />
         <button [disabled]="loading" mat-raised-button color="accent" type="submit">
           <mat-icon>login</mat-icon>
-          <span>&nbsp;&nbsp;&nbsp;Login</span>
+          <span *ngIf="!loading">&nbsp;&nbsp;&nbsp;Login</span>
+          <span *ngIf="loading">&nbsp;&nbsp;&nbsp;Processing Request</span>
         </button>
         &nbsp;&nbsp;
         <a routerLink='/register'>

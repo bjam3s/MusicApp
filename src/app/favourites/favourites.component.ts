@@ -20,9 +20,12 @@ export class FavouritesComponent implements OnInit {
     });
   }
 
-  removeFromFavourites(id:any) {
-    this.dataService.removeFromFavourites(id).subscribe(data => {
+  removeFromFavourites(id: any) {
+    this.dataService.removeFromFavourites(id).subscribe((data) => {
       this.favourites = data.tracks;
+    });
+    this.snackBar.open('Removing from Favourites...', 'Done', {
+      duration: 15000,
     });
   }
 }
